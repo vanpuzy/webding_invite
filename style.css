@@ -50,6 +50,12 @@ body {
     align-items: center;
     box-sizing: border-box;
 }
+.overlay {
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+
 .title {
     font-size: 5rem;
     margin-top: 1rem;
