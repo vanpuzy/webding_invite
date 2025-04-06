@@ -321,7 +321,7 @@ body {
 /* Extra images section */
 .extra-images {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 2rem;
     margin: 2rem 0;
@@ -424,3 +424,23 @@ footer p {
         width: 400px;
     }
 }
+
+.extra-images {
+    display: flex;
+    justify-content: center; /* căn giữa theo chiều ngang */
+    align-items: flex-start; /* hoặc center nếu muốn dọc cũng cân */
+    flex-wrap: wrap; /* cho responsive nếu màn nhỏ */
+    gap: 2rem; /* khoảng cách giữa 2 ảnh */
+    padding: 2rem 1rem;
+  }
+  
+  .image-container {
+    text-align: center;
+    max-width: 300px;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
