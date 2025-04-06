@@ -24,7 +24,6 @@ body {
     color: white;
     font-size: 25px;
 } */
-
 .hero {
     background: url('images/imag7.jpeg') no-repeat center center/cover;
     height: 100vh;
@@ -35,20 +34,22 @@ body {
     text-align: center;
     color: white;
     font-size: 25px;
+    overflow: hidden; /* Ngăn phần dư tràn ra ngoài */
 }
 
 .overlay {
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
-    padding: 5rem;
+    padding: 2rem;
     width: 100%;
     height: 100%;
+    overflow-y: auto; /* ✅ Cho phép cuộn khi nội dung dài */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
 }
-
 .title {
     font-size: 5rem;
     margin-top: 1rem;
