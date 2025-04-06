@@ -386,39 +386,31 @@ footer p {
     color: #e8b4b8;
 }
 
-/* Responsive adjustments */
-@media (min-width: 768px) {
-    .hero .couple-name {
-        font-size: 4.5rem;
+@media (max-width: 768px) {
+    .title {
+      font-size: 3rem;
     }
-    
-    .quote {
-        flex-direction: row;
-        padding: 2rem 1rem;
+  
+    .couple-name {
+      font-size: 2.2rem;
     }
-    
-    .portrait {
-        width: 50%;
-        margin-bottom: 0;
-        margin-right: 2rem;
+  
+    .invitation-text,
+    .date {
+      font-size: 1rem;
     }
-    
-    .quote-text {
-        width: 50%;
-        padding: 0 1rem;
+  
+    .info-box {
+      font-size: 0.9rem;
+      padding: 1rem;
+      margin-top: 1rem;
     }
-    
-    .extra-images {
-        flex-direction: row;
-        justify-content: center;
-        padding: 2rem;
+  
+    .overlay {
+      padding: 1rem;
     }
-    
-    .image-container {
-        width: 45%;
-    }
-}
-
+  }
+  
 @media (min-width: 1024px) {
     .hero .couple-name {
         font-size: 5rem;
