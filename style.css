@@ -34,7 +34,7 @@ body {
     text-align: center;
     color: white;
     font-size: 25px;
-    overflow: hidden; /* Ngăn phần dư tràn ra ngoài */
+    overflow:scroll; /* Ngăn phần dư tràn ra ngoài */
 }
 
 .overlay {
