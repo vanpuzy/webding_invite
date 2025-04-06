@@ -13,37 +13,31 @@ body {
 }
 
 /* Hero section */
-.hero {
-    height: 100vh;
-    background: url('images/memory1.jpeg') no-repeat center center/cover;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
 .hero h1 {
     font-size: 5rem;
     margin: 1rem 0;
     font-weight: 300;
-    white-space: normal; /* Cho phép chữ bẻ dòng nếu cần */
-    word-wrap: break-word; /* Cho phép từ dài bẻ dòng */
+    white-space: normal;
+    word-wrap: break-word;
     text-align: center;
+    padding: 0 20px; /* Add padding to prevent edge touching */
+    line-height: 1.2; /* Better line spacing */
 }
-
 
 @media (max-width: 768px) {
     .hero h1 {
-        font-size: 3rem; /* Giảm kích thước font cho màn hình nhỏ */
+        font-size: 3rem;
+        padding: 0 15px;
     }
 }
 
 @media (max-width: 480px) {
     .hero h1 {
-        font-size: 2.5rem; /* Giảm nữa cho các màn hình nhỏ nhất */
+        font-size: 2rem;
+        padding: 0 10px;
     }
 }
+
 
 
 .overlay {
