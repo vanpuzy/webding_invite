@@ -27,10 +27,11 @@ body {
     font-size: 5rem;
     margin: 1rem 0;
     font-weight: 300;
-    white-space: nowrap; /* Đảm bảo chữ không bị bẻ dòng */
-    overflow: hidden; /* Ẩn phần chữ vượt quá */
-    text-overflow: ellipsis; /* Thêm dấu ba chấm nếu chữ vượt quá */
+    white-space: normal; /* Cho phép chữ bẻ dòng nếu cần */
+    word-wrap: break-word; /* Cho phép từ dài bẻ dòng */
+    text-align: center;
 }
+
 
 @media (max-width: 768px) {
     .hero h1 {
