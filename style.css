@@ -1,0 +1,406 @@
+/* Reset và font chữ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', serif;
+}
+
+body {
+    color: #333;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+/* Hero section */
+.hero {
+    height: 100vh;
+    background: url('images/memory1.jpeg') no-repeat center center/cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 2rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 3px;
+    font-weight: 300;
+}
+
+.hero p {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero h1 {
+    font-size: 5rem;
+    margin: 1rem 0;
+    font-weight: 300;
+}
+
+.hero h1 span {
+    font-weight: bold;
+    color: #e8b4b8;
+}
+
+.date {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.invite-btn {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 1rem 0;
+}
+
+.invite-btn:hover {
+    background: white;
+    color: #333;
+}
+
+.hero{
+    font-size: 25px;
+}
+
+.info-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    margin-top: 2rem;
+    max-width: 800px;
+    border-left: 3px solid #e8b4b8;
+    font-size: large;
+}
+
+.info-box p {
+    margin: 0.5rem 0;
+    text-align: left;
+}
+
+.info-box {
+    font-size: 22px; /* Thay đổi kích thước font tùy ý */
+  }
+  .info-box p {
+    font-size: 22px; /* Thay đổi kích thước font cho các đoạn văn riêng */
+  }
+
+/* Gallery section */
+.gallery {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.polaroid-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.polaroid {
+    background: white;
+    padding: 1rem 1rem 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: rotate(-5deg);
+    transition: all 0.3s ease;
+    width: 400px;
+}
+
+.polaroid:nth-child(even) {
+    transform: rotate(5deg);
+}
+
+.polaroid:hover {
+    transform: rotate(0) scale(1.05);
+}
+
+.polaroid img {
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+}
+
+.polaroid p {
+    font-style: italic;
+    color: #666;
+}
+
+/* Quote section */
+.quote {
+    display: flex;
+    align-items: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(to right, #f3e7e9, #e3eeff);
+}
+
+.portrait {
+    width: 50%;
+    height: 500px;
+    object-fit: contain;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.quote-text {
+    padding: 0 3rem;
+    width: 50%;
+}
+
+.quote-text h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.quote-text p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Memories section */
+.memories {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.memories h2 {
+    font-size: 10rem;
+    margin-bottom: 2rem;
+    color: #333;
+    position: relative;
+    display: inline-block;
+}
+
+.memories h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: #e8b4b8;
+}
+
+.memory-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.memory-grid img {
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.memory-grid img:hover {
+    transform: scale(1.03);
+}
+
+/* Calendar section */
+.calendar-section {
+    padding: 4rem 2rem;
+    background: #f3e7e9;
+    text-align: center;
+}
+
+.calendar {
+    background: white;
+    display: inline-block;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.calendar-header {
+    margin-bottom: 1.5rem;
+}
+
+.calendar-header h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.calendar-header p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.5rem;
+}
+
+.calendar-grid div {
+    padding: 0.5rem;
+    font-weight: bold;
+}
+
+.calendar-grid div:first-child {
+    grid-column: span 7;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.highlight {
+    background: #e8b4b8;
+    color: white;
+    border-radius: 50%;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+footer p {
+    margin-bottom: 1rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #e8b4b8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .quote {
+        flex-direction: column;
+    }
+
+    .portrait, .quote-text {
+        width: 100%;
+    }
+
+    .quote-text {
+        padding: 2rem 1rem;
+    }
+
+    .memory-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .info-box {
+        padding: 1rem;
+    }
+
+    .memory-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.highlight {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+.heart {
+    color: white;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+/* Styling for the extra images section */
+.extra-images {
+    display: flex;
+    justify-content: space-around;  /* Tạo không gian đều giữa các ảnh */
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .image-container {
+    width: 45%;  /* Mỗi ảnh chiếm 45% chiều rộng của container */
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .image-container img {
+    width: 60%;  /* Hình ảnh chiếm toàn bộ chiều rộng của container */
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .image-container img:hover {
+    transform: scale(1.05);  /* Tạo hiệu ứng phóng to khi hover */
+  }
+  
+  .image-container p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 600;
+    text-align: center;
+  }
+  
