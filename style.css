@@ -13,6 +13,18 @@ body {
 }
 
 /* Hero section */
+/* .hero {
+    background: url('images/imag7.jpeg') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+} */
+
 .hero {
     background: url('images/imag7.jpeg') no-repeat center center/cover;
     height: 100vh;
@@ -374,7 +386,7 @@ footer p {
     
     .quote {
         flex-direction: row;
-        padding: 4rem 2rem;
+        padding: 2rem 1rem;
     }
     
     .portrait {
@@ -385,7 +397,7 @@ footer p {
     
     .quote-text {
         width: 50%;
-        padding: 0 2rem;
+        padding: 0 1rem;
     }
     
     .extra-images {
